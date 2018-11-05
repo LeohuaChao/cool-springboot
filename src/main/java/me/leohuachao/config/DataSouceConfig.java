@@ -17,9 +17,9 @@ import javax.sql.DataSource;
  * @Description: TODO
  * @date 2018/11/2
  */
-@Configuration
-@EnableTransactionManagement
-@PropertySource(value={"classpath:config/source.properties"})
+//@Configuration
+//@EnableTransactionManagement
+//@PropertySource(value={"classpath:config/source.properties"})
 public class DataSouceConfig {
 
     @Autowired
