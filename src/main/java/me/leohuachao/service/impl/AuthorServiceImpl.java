@@ -14,7 +14,7 @@ import java.util.List;
  * @Description: TODO
  * @date 2018/11/2
  */
-@Service("authorService")
+//@Service("authorService")
 public class AuthorServiceImpl implements AuthorService {
 
     @Autowired

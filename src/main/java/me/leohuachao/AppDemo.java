@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Description: TODO
  * @date 2018/11/1
  */
-@SpringBootApplication
+//@SpringBootApplication
 public class AppDemo {
 
     public static void main(String args[]) {
