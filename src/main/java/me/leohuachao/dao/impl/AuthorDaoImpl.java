@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 import java.util.List;
@@ -22,10 +23,15 @@ public class AuthorDaoImpl implements AuthorDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    @Transactional
     @Override
     public int add(Author author) {
-        return jdbcTemplate.update("insert into t_author(real_name, nick_name) values(?, ?)",
+        int result =  jdbcTemplate.update("insert into t_author(real_name, nick_name) values(?, ?)",
                 author.getRealName(), author.getNickName());
+        if (true) {
+            throw new IllegalArgumentException();
+        }
+        return result;
     }
 
     @Override

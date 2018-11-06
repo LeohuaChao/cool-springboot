@@ -11,4 +11,5 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface AuthorMapper {
     Author findAuthor(@Param("id") long id);
+    int add(Author author);
 }

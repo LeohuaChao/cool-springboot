@@ -12,4 +12,8 @@
     <select id="findAuthor" resultMap="authorMap" resultType="Author">
         select id, real_name, nick_name from t_author where id = #{id}
     </select>
+
+    <insert id="add" parameterType="Author">
+        insert into t_author(real_name, nick_name) values(#{realName}, #{nickName})
+    </insert>
 </mapper>
