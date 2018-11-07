@@ -11,6 +11,7 @@
     <modules>
         <module>cool-springboot-web</module>
         <module>cool-springboot-service</module>
+        <module>cool-springboot-api</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,27 +26,4 @@
         <spring.boot.version>1.5.17.RELEASE</spring.boot.version>
         <log4jdbc.log4j2.version>1.16</log4jdbc.log4j2.version>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring.boot.version}</version>
-            </plugin>
-        </plugins>
-    </build>
 </project>
