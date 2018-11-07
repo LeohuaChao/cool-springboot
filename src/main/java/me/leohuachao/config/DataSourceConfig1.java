@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @author leohuachao
+ * @autor leohuachao
  * @version V1.0
  * @Description: TODO
  * @date 2018/11/5
